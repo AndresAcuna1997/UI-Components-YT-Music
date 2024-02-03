@@ -1,13 +1,20 @@
+import { FC } from 'react';
 import defaultImage from "../../assets/artits.jpg";
 import styles from "../../styles/youTubeArtistMini.module.css";
 
-export const YouTubeArtistMini = () => {
+interface Props {
+  artistName: string;
+  artistViews: string;
+  artistImage: string;
+}
+
+export const YouTubeArtistMini: FC<Props> = ( { artistName, artistViews, artistImage } ) => {
   return (
     <figure className={ styles[ 'artist-card' ] }>
-      <img className={ styles[ 'artits-image' ] } src={ defaultImage } alt="artits-image" />
+      <img className={ styles[ 'artits-image' ] } src={ artistImage ? artistImage : defaultImage } alt="artits-image" />
       <figcaption>
-        <p className={styles['artist-name']}>Gorillaz</p>
-        <p className={styles['artist-views']}>2,5 M de suscriptores</p>
+        <p className={ styles[ 'artist-name' ] }>{ artistName }</p>
+        <p className={ styles[ 'artist-views' ] }>{ artistViews } de suscriptores</p>
       </figcaption>
     </figure>
   );
