@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Get Repo code
         uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: pnpm i
       - name: Build Storybook
         run: pnpm run build-storybook
       - name: Upload Static Storybook artifact
