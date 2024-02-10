@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     artistImage:'',
-    artistName:'',
-    artistViews:'',
+    artistName:'Gorillaz',
+    artistViews:'3.4 M',
   }
 };

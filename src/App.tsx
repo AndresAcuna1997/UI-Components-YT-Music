@@ -1,11 +1,10 @@
-import { YouTubeCardTwo } from './components/YouTube/YouTubeCardTwo';
 import "./index.css";
 
 function App() {
 
   return (
     <>
-      <YouTubeCardTwo />
+      <h1>Hi</h1>
     </>
   );
 }
