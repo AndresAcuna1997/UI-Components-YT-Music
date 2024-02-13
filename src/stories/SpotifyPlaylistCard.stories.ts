@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { SpotifyPlaylistCard } from '../components/Spotify/SpotifyPlaylistCard';
+import '../index.css';
 
 const meta = {
   title: 'Spotify/Cards/Playlist Card',

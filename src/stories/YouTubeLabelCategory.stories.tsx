@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { YouTubeLabelCategory } from '../components/YouTube/YouTubeLabelCategory';
 
+
 const meta = {
   title: 'YouTube/Labels/YouTubeLabelCategory',
   component: YouTubeLabelCategory,
