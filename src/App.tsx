@@ -1,10 +1,11 @@
 import "./index.css";
+import { SpotifyPlaylistCard } from './components/Spotify/SpotifyPlaylistCard';
 
 function App() {
 
   return (
     <>
-      <h1>Hi</h1>
+      <SpotifyPlaylistCard />
     </>
   );
 }
